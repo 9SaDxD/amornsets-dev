@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เรซูเม่ - อมรเชษฐ์ ธนะปรีชาศิริ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #000000;
+            --text-color: #333333;
+            --text-light: #555555;
+            --line-color: #000000;
+        }
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            color: var(--text-color);
+        }
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            padding: 18mm;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: flex-start;
+        }
+        .photo-placeholder {
+            width: 120px;
+            height: 160px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 12px;
+            margin-right: 25px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .photo-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .header-content {
+            flex-grow: 1;
+            padding-top: 5px;
+        }
+        h1 {
+            font-family: 'Prompt', sans-serif;
+            font-size: 21px;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 0.5px;
+            color: var(--primary-color);
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 8px;
+            margin-bottom: 12px;
+            color: var(--text-light);
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            margin-top: 15px;
+            font-size: 12px;
+            border-top: 1px solid var(--line-color);
+            border-bottom: 1px solid var(--line-color);
+            padding: 12px 0;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .contact-item a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        .contact-item i {
+            font-size: 14px;
+            width: 16px;
+            text-align: center;
+        }
+
+        /* Section Styling */
+        .section-title {
+            font-family: 'Prompt', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        .divider {
+            height: 1px;
+            background-color: var(--line-color);
+            margin-bottom: 12px;
+        }
+
+        /* Content Styling */
+        p {
+            margin: 0 0 5px 0;
+            font-size: 12.5px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        /* Education */
+        .edu-item {
+            display: flex;
+        }
+        .edu-left {
+            width: 25%;
+            font-size: 12.5px;
+        }
+        .edu-right {
+            width: 75%;
+            font-size: 12.5px;
+        }
+        .edu-title {
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        .edu-focus {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 28% 72%;
+            gap: 12px 0;
+            font-size: 12.5px;
+        }
+        .skill-category {
+            font-weight: 600;
+        }
+        .skill-list {
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* Projects */
+        .project-item {
+            margin-bottom: 12px;
+        }
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        .project-title {
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .project-desc {
+            font-size: 12.5px;
+            line-height: 1.5;
+            margin-bottom: 3px;
+            text-align: left;
+        }
+        .project-tech {
+            font-size: 11px;
+            color: var(--text-light);
+            font-weight: 500;
+            font-style: italic;
+        }
+        
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .a4-container {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                padding: 18mm;
+            }
+            .photo-placeholder {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a4-container">
+        <!-- Header -->
+        <div class="header">
+            <div class="photo-placeholder">
+                <img src="./PNG//Me-Update.png" alt="รูปโปรไฟล์">
+            </div>
+            <div class="header-content">
+                <h1>อมรเศรษฐ์ ธนาปรีชาศิริ <br>(AMORNCHEAT THANAPREECHASIRI)</h1>
+                <div class="subtitle">นักพัฒนา Full Stack / Backend (ฟิล์ม)</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i> 086-097-9060
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i> <a href="mailto:kk1121335@gmail.com">kk1121335@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i> ดอนเมือง, กรุงเทพมหานคร
+                    </div>
+                    <!-- <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/amorncheat-thanapreechasiri-79b240436/" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i> <a href="https://github.com/9SaDxD" target="_blank">github.com/9SaDxD</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Career Objective -->
+        <div class="section">
+            <div class="section-title">เป้าหมายการทำงาน</div>
+            <div class="divider"></div>
+            <p>นักศึกษาสาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ที่มีความมุ่งมั่น มีพื้นฐานที่แข็งแกร่งด้านการพัฒนา Full-Stack, การออกแบบฐานข้อมูล และเทคโนโลยี Automation มีความหลงใหลในการสร้างเว็บแอปพลิเคชันและระบบ Backend สมัยใหม่ กำลังมองหาโอกาสในตำแหน่ง Full Stack หรือ Backend Developer ระดับเริ่มต้น เพื่อนำทักษะทางเทคนิคมาประยุกต์ใช้ สร้างสรรค์โปรเจกต์ที่มีประโยชน์ และเติบโตไปพร้อมกับทีมวิศวกรซอฟต์แวร์</p>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">ประวัติการศึกษา</div>
+            <div class="divider"></div>
+            <div class="edu-item">
+                <div class="edu-left">
+                    <div>กำลังศึกษา</div>
+                    <div>มหาวิทยาลัยศรีปทุม</div>
+                </div>
+                <div class="edu-right">
+                    <div class="edu-title">วิทยาศาสตรบัณฑิต สาขาวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์</div>
+                    <div>เกรดเฉลี่ยสะสม: 3.09</div>
+                    <div class="edu-focus">กลุ่มวิชาที่เน้น: วิศวกรรมซอฟต์แวร์, การพัฒนาเว็บ และวิทยาการข้อมูล</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">ทักษะความเชี่ยวชาญ</div>
+            <div class="divider"></div>
+            <div class="skills-grid">
+                <div class="skill-category">ระดับเชี่ยวชาญ</div>
+                <div class="skill-list"><strong>HTML/CSS, JavaScript, React, Node.js, Python, Figma, Postman</strong></div>
+                
+                <div class="skill-category">ระดับคุ้นเคย</div>
+                <div class="skill-list">C#, SQL/NoSQL Database Design, MongoDB, MySQL, n8n Automation, Data Science & AI, Git/GitHub</div>
+                
+                <div class="skill-category">ความสามารถหลัก</div>
+                <div class="skill-list">RESTful API Design, JWT Authentication, Responsive Design, UX/UI Principles, Basic Machine Learning</div>
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="section">
+            <div class="section-title">โปรเจกต์ที่โดดเด่น</div>
+            <div class="divider"></div>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">M-Music | แพลตฟอร์มสตรีมมิ่งเพลง และสร้างเพลย์ลิสต์ตามอารมณ์</div>
+                </div>
+                <div class="project-desc">
+                    พัฒนาแพลตฟอร์มสตรีมมิ่งเพลงที่มีระบบสร้างเพลย์ลิสต์อัตโนมัติตามอารมณ์ของผู้ใช้งาน
+                </div>
+                <div class="project-tech">การจัดกลุ่มผู้ใช้เบื้องต้นในฝั่ง Frontend โดยใช้ข้อมูลจาก LocalStorage</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">Slide Me | แอปพลิเคชันเรียกรถลากและช่วยเหลือฉุกเฉินบนท้องถนน</div>
+                </div>
+                <div class="project-desc">
+                    ออกแบบและพัฒนาแอปพลิเคชันเพื่ออำนวยความสะดวกในการเรียกใช้บริการรถลากและช่วยเหลือฉุกเฉินบนท้องถนนอย่างรวดเร็วและมีประสิทธิภาพ
+                </div>
+                <div class="project-tech">เชื่อมต่อระบบแผนที่ (Mapping API) และบริการ Backend สำหรับการติดตามสถานะแบบเรียลไทม์</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">Silky POS | ระบบจัดการร้านราเมนแบบเรียลไทม์ (POS)</div>
+                </div>
+                <div class="project-desc">
+                    สร้างระบบ Point of Sale (POS) ที่ออกแบบมาเพื่อร้านราเมนโดยเฉพาะ ช่วยให้การจัดการหน้าร้านและออเดอร์แบบเรียลไทม์เป็นเรื่องง่าย
+                </div>
+                <div class="project-tech">พัฒนาด้วย React, Node.js และระบบจัดการฐานข้อมูลแบบเรียลไทม์</div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-header">
+                    <div class="project-title">Aqua Bot | แพลตฟอร์ม AI (RAG) สำหรับการเพาะเลี้ยงปลาน้ำจืด</div>
+                </div>
+                <div class="project-desc">
+                    พัฒนาแพลตฟอร์ม AI ที่ใช้เทคโนโลยี Retrieval-Augmented Generation (RAG) เพื่อช่วยเหลือและให้ข้อมูลที่ถูกต้องเกี่ยวกับการเพาะเลี้ยงปลาน้ำจืด
+                </div>
+                <div class="project-tech">ผสานการทำงานของ Python และโมเดล AI เพื่อประมวลผลและดึงข้อมูลเฉพาะทางได้อย่างแม่นยำ</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
