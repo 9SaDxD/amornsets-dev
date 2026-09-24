@@ -7,9 +7,12 @@ const translations = {
     en: {
         "nav.home": "Home", "nav.about": "About", "nav.skills": "Skills", "nav.projects": "Projects",
         "hero.hello": "Hi, my name is",
+        "hero.name": "Amorncheat",
+        "hero.nickname": "Film",
         "hero.desc": "Computer Science student at Sripatum University passionate about building modern web applications, backend systems, and automation technologies.",
         "hero.viewWork": "View Work",
         "hero.downloadCV": "Download CV",
+        "hero.cvLink": "./PDF/Resume ENG.pdf", // ลิงก์เรซูเม่ภาษาอังกฤษ
         "about.title": "About Me", "about.profile": "Profile",
         "about.p1": "A motivated Computer Science and Software Innovation Development student at Sripatum University seeking an entry-level internship or graduate role.",
         "about.p2": "Passionate about building modern web applications and backend systems with a strong foundation in full-stack development, database design, and automation technologies.",
@@ -45,9 +48,12 @@ const translations = {
     th: {
         "nav.home": "หน้าแรก", "nav.about": "เกี่ยวกับ", "nav.skills": "ทักษะ", "nav.projects": "ผลงาน",
         "hero.hello": "สวัสดีครับ ผมชื่อ",
+        "hero.name": "อมรเศรษฐ์",
+        "hero.nickname": "ฟิล์ม",
         "hero.desc": "นักศึกษาคณะวิทยาการคอมพิวเตอร์ มหาวิทยาลัยศรีปทุม มีความหลงใหลในการพัฒนาเว็บแอปพลิเคชัน ระบบหลังบ้าน และเทคโนโลยี Automation",
         "hero.viewWork": "ดูผลงานทั้งหมด",
         "hero.downloadCV": "โหลดเรซูเม่ (PDF)",
+        "hero.cvLink": "./PDF/Resume TH.pdf", // ลิงก์เรซูเม่ภาษาไทย (ปรับแก้ชื่อไฟล์ตามจริงได้เลยครับ)
         "about.title": "เกี่ยวกับฉัน", "about.profile": "โปรไฟล์ส่วนตัว",
         "about.p1": "นักศึกษาคณะวิทยาการคอมพิวเตอร์และนวัตกรรมการพัฒนาซอฟต์แวร์ มหาวิทยาลัยศรีปทุม กำลังมองหาโอกาสฝึกงานในตำแหน่ง Software / Web Developer",
         "about.p2": "มีความมุ่งมั่นในการสร้างเว็บแอปพลิเคชันและระบบ Backend สมัยใหม่ โดยมีพื้นฐานที่แข็งแกร่งด้าน Full-Stack, การออกแบบ Database และ Automation",
@@ -66,7 +72,7 @@ const translations = {
         "p1.desc": "<span class='text-primary'>▹ ปัญหา:</span> ผู้ใช้มักเสียเวลาในการค้นหาเพลงที่ตรงกับอารมณ์ในแต่ละวัน<br><span class='text-primary'>▹ สิ่งที่สร้าง:</span> เว็บไซต์ฟังเพลงที่ใช้แบบสอบถามสั้นๆ เพื่อวิเคราะห์และสร้างเพลย์ลิสต์ให้เข้ากับอารมณ์อัตโนมัติ<br><span class='text-primary'>▹ หน้าที่ของผม:</span> Full-Stack พัฒนาระบบหน้าบ้านและจัดการข้อมูล",
         
         "p2.title": "Slide Me", "p2.sub": "แอปพลิเคชันเรียกรถสไลด์ฉุกเฉิน",
-        "p2.desc": "<span class='text-primary'>▹ ปัญหา:</span> เมื่อเกิดเหตุฉุกเฉิน ผู้ใช้มักหาบริการรถสไลด์ยากและไม่ทราบราคาล่วงหน้า<br><span class='text-primary'>▹ สิ่งที่สร้าง:</span> แพลตฟอร์มจับคู่ผู้ใช้รถกับผู้ให้บริการรถสไลด์ พร้อมระบบประเมินราคาล่วงหน้าแบบเรียลไทม์ผ่าน GPS API<br><span class='text-primary'>▹ หน้าที่ของผม:</span> ออกแบบและ สร้างเว็บแอปพลิเคชันฝัง Frontend",
+        "p2.desc": "<span class='text-primary'>▹ ปัญหา:</span> เมื่อเกิดเหตุฉุกเฉิน ผู้ใช้มักหาบริการรถสไลด์ยากและไม่ทราบราคาล่วงหน้า<br><span class='text-primary'>▹ สิ่งที่สร้าง:</span> แพลตฟอร์มจับคู่ผู้ใช้รถกับผู้ให้บริการรถสไลด์ พร้อมระบบประเมินราคาล่วงหน้าแบบเรียลไทม์ผ่าน GPS API<br><span class='text-primary'>▹ หน้าที่ของผม:</span> ออกแบบและสร้างเว็บแอปพลิเคชันฝั่ง Frontend",
         
         "p3.title": "Silky POS", "p3.sub": "ระบบจัดการร้านราเม็งแบบเรียลไทม์",
         "p3.desc": "<span class='text-primary'>▹ ปัญหา:</span> ร้านราเม็งมักมีปัญหาออเดอร์ตกหล่นและพนักงานหลังร้านได้ข้อมูลล่าช้า<br><span class='text-primary'>▹ สิ่งที่สร้าง:</span> เว็บแอปพลิเคชัน POS ที่ทำงานแบบเรียลไทม์ผ่าน WebSocket ข้อมูลออเดอร์เด้งเข้าครัวทันทีโดยไม่ต้องรีเฟรช<br><span class='text-primary'>▹ หน้าที่ของผม:</span> Full-Stack ออกแบบระบบและวางโครงสร้าง WebSocket",
@@ -95,23 +101,29 @@ function initTyped(lang) {
     });
 }
 
-function toggleLanguage() {
-    currentLang = currentLang === 'en' ? 'th' : 'en';
-    document.getElementById('lang-btn').innerText = currentLang === 'en' ? 'TH' : 'EN';
-    
+function updateContent() {
+    // อัปเดตข้อความทั่วไป
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if(translations[currentLang][key]) {
             el.innerHTML = translations[currentLang][key]; 
         }
     });
+
+    // อัปเดตลิงก์ดาวน์โหลด CV อัตโนมัติ
+    const cvBtn = document.getElementById('cv-btn');
+    if(cvBtn && translations[currentLang]["hero.cvLink"]) {
+        cvBtn.setAttribute('href', translations[currentLang]["hero.cvLink"]);
+    }
+}
+
+function toggleLanguage() {
+    currentLang = currentLang === 'en' ? 'th' : 'en';
+    document.getElementById('lang-btn').innerText = currentLang === 'en' ? 'TH' : 'EN';
+    updateContent();
     initTyped(currentLang);
 }
 
+// Initial Load
 initTyped('en');
-document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
-    if(translations[currentLang][key]) {
-        el.innerHTML = translations[currentLang][key]; 
-    }
-});
+updateContent();
